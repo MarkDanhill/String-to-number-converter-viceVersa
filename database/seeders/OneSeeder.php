@@ -31,6 +31,7 @@ class OneSeeder extends Seeder
             'fifteen' => 15,
             'twen' => 2,
             'thir' => 3,
+            'fif' => 5,
         ];
 
         foreach ($array as $key => $value) {

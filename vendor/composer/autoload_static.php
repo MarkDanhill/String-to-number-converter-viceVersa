@@ -208,8 +208,8 @@ class ComposerStaticInita4da101745ae2a55192aa38eda8438a6
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Whoops\\' => 
         array (
@@ -598,6 +598,12 @@ class ComposerStaticInita4da101745ae2a55192aa38eda8438a6
     public static $classMap = array (
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\ConverterController' => __DIR__ . '/../..' . '/app/Http/Controllers/ConverterController.php',
+        'App\\Http\\Requests\\ConverterRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ConverterRequest.php',
+        'App\\Models\\One' => __DIR__ . '/../..' . '/app/Models/One.php',
+        'App\\Models\\PlaceValue' => __DIR__ . '/../..' . '/app/Models/PlaceValue.php',
+        'App\\Models\\Postfix' => __DIR__ . '/../..' . '/app/Models/Postfix.php',
+        'App\\Models\\Teen' => __DIR__ . '/../..' . '/app/Models/Teen.php',
+        'App\\Models\\Ten' => __DIR__ . '/../..' . '/app/Models/Ten.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Traits\\Parseable' => __DIR__ . '/../..' . '/app/Traits/Parseable.php',
@@ -722,6 +728,11 @@ class ComposerStaticInita4da101745ae2a55192aa38eda8438a6
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\OneSeeder' => __DIR__ . '/../..' . '/database/seeders/OneSeeder.php',
+        'Database\\Seeders\\PlaceValueSeeder' => __DIR__ . '/../..' . '/database/seeders/PlaceValueSeeder.php',
+        'Database\\Seeders\\PostfixSeeder' => __DIR__ . '/../..' . '/database/seeders/PostfixSeeder.php',
+        'Database\\Seeders\\TeenSeeder' => __DIR__ . '/../..' . '/database/seeders/TeenSeeder.php',
+        'Database\\Seeders\\TenSeeder' => __DIR__ . '/../..' . '/database/seeders/TenSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',

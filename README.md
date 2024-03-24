@@ -1,6 +1,7 @@
 Steps to run
 
-open root folder "run composer install"
-change db name in env then run "php artisan migrate:fresh --seed"
-open frontend "cd frontend" run "npm install"
-run "npm run dev"
+1.open root folder "run composer install"
+2.change db name in env then run "php artisan migrate:fresh --seed"
+3. run "php artisan serve"
+4.open frontend "cd frontend" run "npm install"
+5. run "npm run dev"

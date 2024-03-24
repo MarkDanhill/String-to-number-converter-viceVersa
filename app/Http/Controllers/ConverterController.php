@@ -56,6 +56,7 @@ class ConverterController extends Controller
             $string = strtolower($string);
             $stringArray = str_split($string);
             $stringHolder = '';
+            $previousIsTens = false;
             $hasOnes = 0;
             $hasMultiplier = 0;
             $number = 0;
@@ -71,23 +72,22 @@ class ConverterController extends Controller
                     $stringHolder = '';
                 }
 
-
-                // if()
-
+                if ($previousIsTens == 10 && $hasOnes) {
+                    $number += $hasOnes;
+                    $hasOnes = 0;
+                    $hasMultiplier = 1;
+                }
                 if ($hasOnes && $hasMultiplier) {
                     $number += $hasOnes * $hasMultiplier;
+                    $previousIsTens = $hasMultiplier;
                     $hasOnes = 0;
-                    $hasMultiplier = 0;
+                    $hasMultiplier = 1;
                 }
                 if ($hasMultiplier) {
                     $number *= $hasMultiplier;
+
                     $hasMultiplier = 0;
                 }
-                // if ($hasOnes && !$hasMultiplier && $number) {
-                //     $number += $hasOnes; //3
-                //     $hasOnes = 0;
-                //     $stringHolder = '';
-                // }
             }
 
             return  $number + $hasOnes;
@@ -114,7 +114,9 @@ class ConverterController extends Controller
                 }
             }
             if ($arraylength > 1 && $i != $arraylength - 1) {
-                $digitString = $digitString . array_search($arraylength - $i, $this->placeValues);
+                if ($numberArr[$i] != ['0', '0', '0']) {
+                    $digitString = $digitString . array_search($arraylength - $i, $this->placeValues);
+                }
             }
         }
 

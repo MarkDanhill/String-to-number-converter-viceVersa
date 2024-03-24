@@ -17,7 +17,6 @@ class PostfixSeeder extends Seeder
         $array = [
             'teen' => 10,
             'ty' => 10,
-            'fifty' => 50,
             'hundred' => 100,
             'thousand' => 1000,
             'thousands' => 1000,
